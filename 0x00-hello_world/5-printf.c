@@ -1,12 +1,15 @@
 #include<stdio.h>
+
 /**
- * this code will print in printf function have
- * int main function will be excted print f function
- * return (0) sucess
- */
+ * main - Entry point it will be excution first
+ *
+ * Description: A C program that prints with printf function.
+ *
+ * Return: Always 0 (Success)
+*/
+
 int main(void)
 {
-	printf("with proper grammar, but the outcome is a piece of art,");
+	printf("with proper grammar, but the outcome is a piece of art,\n");
 	return (0);
 }
-
