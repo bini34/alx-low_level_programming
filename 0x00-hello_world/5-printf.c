@@ -1,4 +1,4 @@
-#include<stdio>
+#include<stdio.h>
 /**
  * this code will print in printf function have
  * int main function will be excted print f function
