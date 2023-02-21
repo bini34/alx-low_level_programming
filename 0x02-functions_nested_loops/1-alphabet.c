@@ -1,10 +1,7 @@
 #include"main.h"
-
 /**
- * Discription -  print  the alphabet a - z
- *                 
+ * Discription:  print  the alphabet a - z                 
 */
-
 void print_alphabet(void)
 {
 	int ch;
@@ -13,4 +10,3 @@ void print_alphabet(void)
 		_putchar(ch);
 	_putchar('\n');
 }
-
