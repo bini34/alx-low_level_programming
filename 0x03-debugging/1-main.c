@@ -13,12 +13,11 @@ int main(void)
 
         i = 0;
 
-        while (i < 10)
-//variable i is causing  a problem b/c doesnot increment
+  /*      while (i < 10)
         {
                 putchar(i);
         }
-
+*/
         printf("Infinite loop avoided! \\o/\n");
 
         return (0);
