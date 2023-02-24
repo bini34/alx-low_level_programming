@@ -9,7 +9,7 @@
 
 void print_numbers(void)
 {
-	int n = 0;
+	int numn = 0;
 
 	while (num >= 0 && num <= 9)
 	{
