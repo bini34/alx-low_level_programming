@@ -3,7 +3,7 @@
  *
  * @s: The string to be reversed.
  *
- * Return:Nothing
+ * Return: Nothing
  */
 void rev_string(char *s)
 {
@@ -12,7 +12,8 @@ void rev_string(char *s)
 
 	for (i = 0; s[i] != '\0'; ++i)
 		;
-	for (j = 0; j < 1 / 2; ++j)
+
+	for (j = 0; j < i / 2; ++j)
 	{
 		ch = s[j];
 		s[j] = s[i - 1 - j];
