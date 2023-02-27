@@ -1,12 +1,12 @@
 /**
- * reset_to_98:it takes parameter and update n value\
+ * reset_to_98 - Updates the value of an integer pointed to by a given pointer to 98.
  *
- * n- a parameter 
+ * @n: Pointer to an integer whose value will be updated to 98.
  *
- * return 
+ * Return: None.
  */
-
 void reset_to_98(int *n)
 {
-	*n=98;
+	*n = 98;
 }
+
