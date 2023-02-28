@@ -7,24 +7,19 @@
  *
  * Return: Always 0
  */
-int main(void)
-{
-	char password[7];
-	int i, checksum;
 
-	srand(time(NULL));
-	for (i = 0; i < 6; i++)
+#define PASSWORD_LENGTH 6
+
+int main(void) 
 	{
-	password[i] = rand() % 94 + 33;
+	srand(time(NULL)); 
+	char password[PASSWORD_LENGTH + 1];
+	for (int i = 0; i < PASSWORD_LENGTH;i++)
+	{
+		password[i] = rand() % 26 + 97;
 	}
-    checksum = (int)password[0] ^ 0x3b;
-    for (i = 1; i < 6; i++)
-    {
-	    checksum ^= (int)password[i];
-    }
-    password[6] = (char)checksum;
-
-    printf("%s", password);
+	password[PASSWORD_LENGTH] = '\0';
+	printf("%s\n", password);
 	return (0);
 }
 
