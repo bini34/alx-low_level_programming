@@ -11,10 +11,10 @@
 #define PASSWORD_LENGTH 6
 
 int main(void) 
-	{
-	srand(time(NULL)); 
+{
 	char password[PASSWORD_LENGTH + 1];
-	for (int i = 0; i < PASSWORD_LENGTH;i++)
+	int i;
+	for ( i = 0; i < PASSWORD_LENGTH;i++)
 	{
 		password[i] = rand() % 26 + 97;
 	}
