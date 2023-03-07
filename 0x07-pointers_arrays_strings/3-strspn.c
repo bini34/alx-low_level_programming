@@ -16,16 +16,15 @@ unsigned int _strspn(char *s, char *accept)
 	while (*p)
 	{
 		matched = 0;
-		char *q = accept;
 
-		while (*q)
+		while (*accept)
 		{
-			if (*p == *q)
+			if (*p == *accept)
 			{
 				matched = 1;
 				break;
 			}
-			q++;
+			accept++;
 		}
 		if (!matched)
 		{
