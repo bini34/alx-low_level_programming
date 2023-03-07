@@ -12,11 +12,12 @@ unsigned int _strspn(char *s, char *accept)
 	unsigned int len = 0;
 	char *p = s;
 	int matched = 0;
-	
+
 	while (*p)
 	{
 		matched = 0;
 		char *q = accept;
+
 		while (*q)
 		{
 			if (*p == *q)
@@ -34,6 +35,6 @@ unsigned int _strspn(char *s, char *accept)
 	p++;
 	}
 
-    return (len);
+	return (len);
 }
 
