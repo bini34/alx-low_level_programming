@@ -1,3 +1,5 @@
+#include <stdio.h>
+#include <string.h>
 /**
  * is_palindrome - a functiction check if a string is a palindrome
  *
