@@ -9,32 +9,19 @@
 
 int _sqrt_recursion(int n)
 {
-	if (n == 0 || n == 1)
-		return (n);
-	return (_sqrt_helper(n, 1, n));
-}
-
-/**
- * _sqrt_helper - helper function to find the square root of a number
- * @n: number to be used
- * @start: starting value for binary search
- * @end: ending value for binary search
- *
- * Return: the square root of n, or -1 if it does not exist
- */
-
-int _sqrt_helper(int n, int start, int end)
-{
-	if (start > end)
+	if (n < 0)
 		return (-1);
 
-	int mid = (start + end) / 2;
-	int square = mid * mid;
+	if (n == 0 || n == 1)
+		return (n);
 
-	if (square == n)
-		return (mid);
-	else if (square > n)
-		return (_sqrt_helper(n, start, mid - 1));
-	else
-		return (_sqrt_helper(n, mid + 1, end));
+	int i;
+
+	for (i = 1; i <= n; i++)
+	{
+		if (i  i == n)
+			return (i);
+		if (i  i > n)
+			return (-1);
+	}
 }
