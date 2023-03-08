@@ -38,4 +38,3 @@ int _sqrt_helper(int n, int start, int end)
 	else
 		return (_sqrt_helper(n, mid + 1, end));
 }
-
