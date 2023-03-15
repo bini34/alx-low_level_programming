@@ -30,15 +30,12 @@ int **alloc_grid(int width, int height)
 		grid[i] = (int *)calloc(width, sizeof(int));
 		if (!grid[i])
 		{
-			while (i--)
+			for (j = 0; j < i; j++)
 			{
-				for (j = 0; j < i; j++)
-				{
-					free(grid[j]);
-				}
+				free(grid[j]);
 			}
-		free(grid);
-		return (NULL);
+			free(grid);
+			return (NULL);
 		}
 	}
 	return (grid);
