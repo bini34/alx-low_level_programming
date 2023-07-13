@@ -1,4 +1,4 @@
-#include <unistd.h>
+#include <stdio.h>
 #include <string.h>
 /**
  * main - Entry point
@@ -9,8 +9,8 @@
  */
 int main(void)
 {
-	char *p = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
+	char *p = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
 
-	write(2, p, strlen(p));
+	write(2, p, 59);
 	return(1);
 }
