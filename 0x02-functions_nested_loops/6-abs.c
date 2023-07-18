@@ -2,11 +2,11 @@
 /**
  * _abs - function that computes the absolute value of an integer
  *
- * @int: a number that use
+ * @n: a number that use
  *
  * Return: the absolute value of an integer
  */
-int _abs(int)
+int _abs(int n)
 {
-	return (abs(int));
+	return (abs(n));
 }
