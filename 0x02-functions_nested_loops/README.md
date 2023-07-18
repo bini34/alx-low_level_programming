@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 0x02. C - Functions, nested loops
+=======
+#0x02. C - Functions, nested loops
+>>>>>>> 2ffd471a552cabf94bde2e7f97396cf24f8cc959
 
 
 0. _putchar
