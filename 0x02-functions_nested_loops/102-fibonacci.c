@@ -9,7 +9,7 @@ int main(void)
 {
 	unsigned long i, x = 1, y = 2, z;
 
-	printf("%d, %d, ", x, y);
+	printf("%lu, %lu, ", x, y);
 	for (i = 1; i <= 48; i++)
 	{
 		z = x + y;
@@ -20,5 +20,5 @@ int main(void)
 			printf(", ");
 	}
 	printf("\n");
-
+	return (0);
 }
