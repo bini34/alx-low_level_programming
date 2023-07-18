@@ -7,7 +7,8 @@
  */
 int main(void)
 {
-	unsigned long i, x = 1, y = 2, z, sum = 0;
+	unsigned long i, x = 1, y = 2, z;
+	float sum = 0;
 
 	for (i = 1; i <= 4000000 ; i++)
 	{
@@ -17,6 +18,6 @@ int main(void)
 		x = y;
 		y = z;
 	}
-	printf("%lu\n", sum);
+	printf("%.0f\n", sum);
 	return (0);
 }
