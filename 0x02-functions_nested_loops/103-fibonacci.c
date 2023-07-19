@@ -5,18 +5,18 @@
  *
  * Return: Always 0.
  */
-int main(void)
+int main()
 {
-	unsigned long i, x = 1, y = 2, z, sum = 0;
+	int x = 1, y = 2, z, sum = 0;
 
-	for (i = 1; i <= 4000000 ; i++)
+	while (x <= 4000000)
 	{
+		if (x % 2 == 0)
+			sum += x;
 		z = x + y;
-		if ((z % 2) == 0)
-			sum += z;
 		x = y;
 		y = z;
 	}
-	printf("%lu\n", sum);
-	return (0);
+	printf("%d\n", sum);
+	return 0;
 }
