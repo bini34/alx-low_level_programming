@@ -7,17 +7,15 @@
  */
 int main(void)
 {
-	unsigned long i, x = 1, y = 2, z;
+	int i, x = 1, y = 2, z;
 
-	printf("%lu, %lu, ", x, y);
+	printf("%d, %d, ", x, y);
 	for (i = 1; i <= 96; i++)
 	{
 		z = x + y;
-		printf("%lu", z);
+		printf(", %d", z);
 		x = y;
 		y = z;
-		if (i != 48)
-			printf(", ");
 	}
 	printf("\n");
 	return (0);
