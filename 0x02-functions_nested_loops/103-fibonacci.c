@@ -5,7 +5,7 @@
  *
  * Return: Always 0.
  */
-int main()
+int main(void)
 {
 	int x = 1, y = 2, z, sum = 0;
 
@@ -18,5 +18,5 @@ int main()
 		y = z;
 	}
 	printf("%d\n", sum);
-	return 0;
+	return (0);
 }
