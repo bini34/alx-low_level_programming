@@ -9,7 +9,7 @@
 void print_number(int n)
 {
 	int t = n, d = 1, num;
-	
+
 	if (n == 0)
 	{
 		_putchar('0');
@@ -27,12 +27,12 @@ void print_number(int n)
 		t /= 10;
 	}
 	d /= 10;
-	while(d != 0)
+	while (d != 0)
 	{
 		num = n / d;
 		n %= d;
 		d /= 10;
-		_putchar(num + '0' );
+		_putchar(num + '0');
 	}
 }
 
