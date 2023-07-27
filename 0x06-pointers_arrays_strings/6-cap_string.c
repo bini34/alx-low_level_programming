@@ -6,5 +6,30 @@
  */
 char *cap_string(char *str)
 {
+	char *ptr = str;
 
+	while (*str != '\0')
+	{
+		if (*str == ',' || *str == ';' || *str == '.' ||
+				*str == '!' || *str == '?' || *str == '"' ||
+				*str == '(' || *str == ')' || *str == '{' ||
+				*str == '}' || *str == ' ' || *str == '\n'
+				|| *str == '\t')
+		{
+			str++;
+			if (isalpha(*str))
+			{
+				*str = toupper(*str);
+				str++;
+			}
+			else
+			{
+				str++;
+				*str = toupper(*str);
+				str++;
+			}
+		}
+		str++;
+	}
+return (ptr);
 }
