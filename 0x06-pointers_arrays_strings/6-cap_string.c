@@ -20,13 +20,11 @@ char *cap_string(char *str)
 			if (isalpha(*str))
 			{
 				*str = toupper(*str);
-				str++;
 			}
 			else
 			{
 				str++;
 				*str = toupper(*str);
-				str++;
 			}
 		}
 		str++;
