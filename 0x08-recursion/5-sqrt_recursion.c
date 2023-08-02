@@ -9,9 +9,9 @@
  * Return: The square root of the number if it has
  *			a natural square root, otherwise -1.
  */
-int _sqrt_recursive(int n, int start, int end)
+int _sqrt_recursive(long n, long start, long end)
 {
-	int mid = start + (end - start) / 2;
+	long mid = start + (end - start) / 2;
 
 	if (mid * mid == n)
 		return (mid);
@@ -33,5 +33,5 @@ int _sqrt_recursion(int n)
 {
 	if (n < 0)
 		return (-1);
-	return (_sqrt_recursive(n, 1, n));
+	return ((int)_sqrt_recursive((long)n, 1, (long)n));
 }
