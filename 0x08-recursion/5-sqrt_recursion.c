@@ -1,18 +1,4 @@
 #include "main.h"
-/**
- * _sqrt_recursion -  a function that returns the natural
- *						square root of a number.
- *
- * @n: a number
- * Return: returns the natural square root of a number If n does not
- *			have a natural square root, the function should return -1
- */
-int _sqrt_recursion(int n)
-{
-	if (n < 0)
-		return (-1);
-	return (_sqrt_recursive(n, 1, n));
-}
 
 /**
  * _sqrt_recursive - A helper function that calculates the square
@@ -34,4 +20,18 @@ int _sqrt_recursive(int n, int start, int end)
 	if (mid * mid < n)
 		return (_sqrt_recursive(n, mid + 1, end));
 	return (_sqrt_recursive(n, start, mid - 1));
+}
+/**
+ * _sqrt_recursion -  a function that returns the natural
+ *						square root of a number.
+ *
+ * @n: a number
+ * Return: returns the natural square root of a number If n does not
+ *			have a natural square root, the function should return -1
+ */
+int _sqrt_recursion(int n)
+{
+	if (n < 0)
+		return (-1);
+	return (_sqrt_recursive(n, 1, n));
 }
