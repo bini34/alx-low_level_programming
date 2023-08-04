@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- * main - program that prints its name
+ * main - a program that multiplies two numbers.
  * @ac: argument counter
  * @av: argument variable
- * Return: return 0
+ * Return: return 0 if have a error it return 1
  */
 int main(int ac, char *av[])
 {
