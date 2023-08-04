@@ -13,7 +13,7 @@ int main(int ac, char *av[])
 	if (ac == 1)
 	{
 		printf("Error\n");
-		return (0);
+		return (1);
 	}
 	for (i = 1; i < ac; i++)
 	{
