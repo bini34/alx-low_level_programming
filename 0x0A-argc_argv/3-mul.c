@@ -9,7 +9,7 @@ int main(int ac, char *av[])
 {
 	int i, mul = 1;
 
-	if (ac < 1)
+	if (ac <= 1)
 	{
 		printf("Error\n");
 		return (1);
