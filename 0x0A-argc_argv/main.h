@@ -5,4 +5,5 @@
 #include <stdlib.h>
 #include <ctype.h>
 
+int _isdigits(const char *str);
 #endif
