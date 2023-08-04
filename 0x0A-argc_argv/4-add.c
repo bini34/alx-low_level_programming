@@ -11,9 +11,9 @@ int _isdigits(const char *str)
 	for (i = 0; str[i] != '\0'; i++)
 	{
 		if (!isdigit(str[i]))
-			return 0;
-    }
-    return 1;
+			return (0);
+	}
+	return (1);
 }
 /**
  * main - a program that adds positive numbers.
