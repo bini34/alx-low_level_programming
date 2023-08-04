@@ -7,15 +7,14 @@
  */
 int main(int ac, char *av[])
 {
-	int i;
-	int mul = 1;
+	int i, mul = 1;
 
-	if (ac == 1)
+	if (ac < 1)
 	{
 		printf("Error\n");
 		return (1);
 	}
-	for (i = 1; i < ac; i++)
+	for (i = 1; i < 3; i++)
 	{
 		mul *= atoi(av[i]);
 	}
