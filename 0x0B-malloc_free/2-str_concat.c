@@ -19,15 +19,15 @@ char *str_concat(char *s1, char *s2)
 
 	s3 = (char *)malloc(len1 + len2 + 1);
 	if (s3 == NULL)
-		return NULL;
+		return (NULL);
 
-	while(*s1 != '\0')
+	while (*s1 != '\0')
 	{
 		s3[i] = *s1;
 		i++;
 		s1++;
 	}
-	while(*s2 != '\0')
+	while (*s2 != '\0')
 	{
 		s3[i] = *s2;
 		s2++;
