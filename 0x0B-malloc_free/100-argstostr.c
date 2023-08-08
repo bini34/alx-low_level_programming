@@ -29,9 +29,8 @@ char *argstostr(int ac, char **av)
 			ptr[index] = av[i][j];
 			index++;
 		}
-			ptr[index] = '\n';
-			index++;
-		
+		ptr[index] = '\n';
+		index++;
 	}
 	ptr[index] = '\0';
 	return (ptr);
