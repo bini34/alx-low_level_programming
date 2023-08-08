@@ -52,7 +52,7 @@ char **strtow(char *str)
 	char **words;
 	int word_count, i = 0, j;
 
-	if (str == NULL || *str == '\0')
+	if (str == NULL || *str == '\0' || (strspn(str, " \t\n\r\f\v") == strlen(str)))
 		return (NULL);
 	word_count = count_words(str);
 	words = malloc((word_count + 1) * sizeof(char *));
