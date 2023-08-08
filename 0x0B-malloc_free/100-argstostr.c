@@ -29,11 +29,9 @@ char *argstostr(int ac, char **av)
 			ptr[index] = av[i][j];
 			index++;
 		}
-		if (i < ac - 1)
-		{
 			ptr[index] = '\n';
 			index++;
-		}
+		
 	}
 	ptr[index] = '\0';
 	return (ptr);
