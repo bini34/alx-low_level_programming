@@ -8,36 +8,26 @@
  *
  * Return: nothing
 */
-
 void print_strings(const char *separator, const unsigned int n, ...)
 {
+	size_t i;
+	const char *x;
 	va_list args;
-	unsigned int i;
-	const char *str;
 
 	va_start(args, n);
 
 	for (i = 0; i < n; i++)
 	{
-		str = va_arg(args, const char *);
-
-		if (str != NULL)
-		{
-			printf("%s", str);
-		} else
-		{
+		x = va_arg(args, const char *);
+		if (x != NULL)
+			printf("%s", x);
+		else
 			printf("(nil)");
-		}
 
-		if (separator != NULL && i < n - 1)
-		{
-			printf("%s", separator);
-		}
+		if (i != n - 1 && separator != NULL)
+			printf(separator);
 	}
-
-	va_end(args);
-
 	printf("\n");
+	va_end(args);
 }
-
 
