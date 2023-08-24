@@ -1,20 +1,23 @@
-section .data
-    hello db 'Hello, Holberton', 10  ; The string to be printed, with a newline character (10) at the end
-    hello_len equ $ - hello           ; Calculate the length of the string
+; Declare needed C  functions
+	extern	printf		; the C function, to be called
 
-section .text
-    global _start
+	section .data		; Data section, initialized variables
+msg:	db "Hello, Holberton", 0; C string needs 0
+fmt:	db "%s", 10, 0		; The printf format, "\n",'0'
 
-_start:
-    ; sys_write (write to stdout)
-    mov rax, 1                      ; syscall number for sys_write
-    mov rdi, 1                      ; file descriptor 1 (stdout)
-    mov rsi, hello                  ; pointer to the string
-    mov rdx, hello_len              ; length of the string
-    syscall
+	section .text		; Code section.
 
-    ; sys_exit (exit the program)
-    mov rax, 60                     ; syscall number for sys_exit
-    xor rdi, rdi                    ; exit status (0)
-    syscall
+	global main		; the standard gcc entry point
+main:				; the program label for the entry point
+	push	rbp		; set up stack frame, must be alligned
+
+	mov	rdi,fmt
+	mov	rsi,msg
+	mov	rax,0		; or can be  xor  rax,rax
+	call	printf		; Call C function
+
+	pop	rbp		; restore stack
+
+	mov	rax,0		; normal, no error, return value
+	ret			; return
 
