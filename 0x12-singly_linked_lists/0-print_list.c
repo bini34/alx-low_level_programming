@@ -12,15 +12,11 @@ size_t print_list(const list_t *h)
 	while (tempo != NULL)
 	{
 		if (tempo->str == NULL)
-		{
 			printf("[0] (nil)\n");
-			tempo = tempo->next;
-			i++;
-			continue;
-		}
-		printf("[%lu] %s\n", (unsigned long)tempo->len, tempo->str);
-		tempo =  tempo->next;
+		else
+			printf("[%lu] %s\n", (unsigned long)tempo->len, tempo->str);
 		i++;
+		tempo = tempo->next;
 	}
 	return (i);
 }
