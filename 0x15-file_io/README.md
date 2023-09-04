@@ -1,5 +1,6 @@
-<h1>&nbsp&nbsp0x15. C - File I/O</h1>
+<h1><center>0x15. C - File I/O</center></h1>
 
+<center>0x15. C - File I/O</center>
 
 <h2>Tasks</h2>
 
