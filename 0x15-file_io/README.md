@@ -1,4 +1,4 @@
-<h1><center>0x15. C - File I/O</center></h1>
+<h1 style="text-align:center">0x15. C - File I/O</h1>
 
 <center>0x15. C - File I/O</center>
 
