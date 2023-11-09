@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# Add all changes
+git add .
+
+# Prompt for a commit message
+read -p "Enter your commit message: " commit
+
+# Commit changes with the provided message
+git commit -m "$commit"
+
+# Push changes to the remote repository
+git push
