@@ -1,14 +1,10 @@
-// hack.c
 #include <stdio.h>
 #include <stdlib.h>
+#include <unistd.h>
 
-__attribute__((constructor))
-void make_me_win(void)
+int printf(const char *format, ...)
 {
-	FILE *fp = fopen("winning_numbers.txt", "w");
-	if (fp != NULL)
-	{
-		fprintf(fp, "9 8 10 24 75 9\n");
-		fclose(fp);
-	}
+	write(1, "9 8 10 24 75 +9\n", 17);
+	write(1, "congratulation, you win the Jackpot!\n",38);
+	exit(EXIT_SUCCESS);
 }
