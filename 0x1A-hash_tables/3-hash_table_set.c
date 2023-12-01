@@ -1,5 +1,4 @@
 #include "hash_tables.h"
-
 /**
  * hash_table_set - Adds an element to the hash table.
  * @ht: The hash table.
@@ -18,7 +17,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	index = key_index((unsigned char *)key, ht->size);
 	temp = ht->array[index];
 	while (temp)
-	{`
+	{
 		if (strcmp(temp->key, key) == 0)
 		{
 			free(temp->value);
