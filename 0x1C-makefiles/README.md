@@ -1,5 +1,7 @@
 # Project Title: 0x1C. C - Makefiles
 
+![make gif](make.gif)
+
 ## Overview
 
 This project focuses on understanding and implementing Makefiles in the C programming language. The tasks involve creating Makefiles with specific rules, variables, and functionalities. The project aims to enhance your understanding of Make, Makefiles, rules, variables, and compilation processes.
